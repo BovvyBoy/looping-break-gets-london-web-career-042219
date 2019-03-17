@@ -2,9 +2,8 @@ require_relative "spec_helper"
 require_relative "../levitation_quiz.rb"
 
 def levitation_quiz
-  def annoying
     loop do 
-        puts "What's up, Doc?"
+        puts "What is the spell that enacts levitation?"
         answer = gets.chomp
         break if answer == "STOP"
     end
