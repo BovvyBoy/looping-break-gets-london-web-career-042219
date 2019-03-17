@@ -2,14 +2,14 @@ require_relative "spec_helper"
 require_relative "../levitation_quiz.rb"
 
 def levitation_quiz
-    loop do 
-        puts "What is the spell that enacts levitation?"
-        answer = gets.chomp
-        break if answer == "STOP"
-    end
-    puts "Okay, okay, jeez. I'll stop. Sorry."
+  loop do 
+    puts "What is the spell that enacts levitation?"
+      answer = gets.chomp
+      break if answer == "Wingardium Leviosa"
+  end
+   puts "Okay, okay, jeez. I'll stop. Sorry."
 end
-end
+
 
 describe "#levitation_quiz" do 
 	it "puts out the question 'What is the spell that enacts levitation?' until a user types 'Wingardium Leviosa'. Then, it puts out 'You passed the quiz!'" do 
